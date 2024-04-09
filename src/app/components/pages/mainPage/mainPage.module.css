@@ -1,0 +1,192 @@
+.mainPageWrap {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/images/kmns-main.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: mainImg 5s normal;
+}
+
+@keyframes mainImg {
+    0% {
+        background-size: 130%;
+        opacity: 0;
+    }
+    100% {
+        background-size: 100%;
+        opacity: 1;
+    }
+}
+
+
+.mainTitleWrap {
+    position: absolute;
+    font-weight: 400;
+    top: 4.5vw;
+    right: 47vw;
+    font-family: var(--sans);
+}
+
+.mainTitle {
+    font-size: 5.5vw;
+    font-weight: 600;
+    transform: scaleY(1.2);
+    color: transparent;
+}
+
+.letterShadow {
+    color: white;
+    text-shadow: 0 0 15px #a589fa;
+    animation: letshad 1s normal;
+}
+
+@keyframes letshad {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px #fff;
+        opacity: 0;
+    }
+    25% {
+        text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px #00fcff;
+        opacity: 1;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 50px #fff, 0 0 70px #fff;
+    }
+    100% {
+        text-shadow: 0 0 15px #a589fa;
+    }
+}
+
+.mainSubTitle {
+    font-size: 1.46vw;
+    color: var(--deep-purple);
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: .7s ease all;
+    transform: scaleY(1.2);
+}
+
+.mainSubTitleVisible {
+    opacity: 1;
+}
+
+.mainDescription {
+    font-size: 1.4vw;
+    font-family: var(--sans);
+    padding-top: 10px;
+    border-top: 1px solid var(--light-cyan);
+}
+
+.titleInvisible {
+    margin-top: -150px;
+    opacity: 0;
+}
+
+.titleVisible {
+    margin-top: 0;
+    opacity: 1;
+    transition: all ease 2s;
+}
+
+.mainPageMenu {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.menuItem {
+    width: 0;
+    font-family: var(--sans);
+    overflow: hidden;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: calc(1.5vw + 5px);
+    text-transform: uppercase;
+    padding: .5vw 0 .3vw 3vw;
+    background: linear-gradient(90deg, #4ea5d0, #4ea5d000);
+    box-shadow: -30px 3px 15px 0 #254554;
+    cursor: pointer;
+    margin-left: -3vw;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.menuItem:hover {
+    background: linear-gradient(90deg, #60caff, #4ea5d000);;
+    transition: all .5s ease;
+}
+
+.menuItemVisible {
+    margin-left: 0;
+    width: 18vw;
+    opacity: 1;
+}
+
+@media screen and (max-width: 991px) {
+    .mainSubTitle {
+        margin-bottom: 7px;
+    }
+
+    .mainDescription {
+        padding-top: 7px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .mainPageWrap {
+        /*background-image: url('../../../assets/images/norilsk-main-mobile.png');*/
+    }
+
+    .starWrap {
+        top: 30vw;
+        left: 44%;
+    }
+
+    .mainTitleWrap {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .titleInvisible {
+        margin-top: -50px;
+    }
+
+    .titleVisible {
+        transition: all ease 1s;
+    }
+
+    .mainTitle {
+        font-size: 2.5em;
+    }
+
+    .mainSubTitle {
+        font-size: 1.3em;
+    }
+
+    .mainPageMenu {
+        display: none;
+    }
+
+    .mainDescription {
+        width: fit-content;
+        font-size: .9em;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainSubTitle {
+        margin-bottom: 5px;
+    }
+
+    .mainDescription {
+        padding-top: 5px;
+    }
+}

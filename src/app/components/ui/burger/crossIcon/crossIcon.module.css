@@ -1,0 +1,19 @@
+.crossWrap {
+    width: 30px;
+    height: 30px;
+}
+
+
+.inclinedLineOne,
+.inclinedLineTwo {
+    margin: 0 auto;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    transform: rotate(-45deg);
+}
+
+.inclinedLineTwo {
+    transform: rotate(45deg);
+    margin-top: -30px;
+}

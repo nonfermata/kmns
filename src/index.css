@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+:root {
+    --sans: "Roboto Condensed", sans-serif;
+    --serif: 'STIX Two Text', serif;
+    --title-font: "Kablammo", system-ui;
+    --base-black: #111;
+    --base-white: #fffff5;
+    --white-opacity: #ffffffee;
+    --light-cyan: #80f8ff;
+    --ex-light-blue: #f5fdff;
+    --top-menu-shadow: #33333355;
+    --light-grey-blue: #d7eef5;
+    --grey-blue: #afd2dd;
+    --blue-opacity: #2e65c399;
+    --blue-menu-opacity: #1f3866dd;
+    --dark-grey-blue: #479ab3;
+    --dark-green-blue: #468c89;
+    --inactive-green-blue: #51a29e;
+    --blue: #2e65c3;
+    --dark-blue: #003899;
+    --deep-blue: #122342;
+    --deep-purple: #493f58;
+    --green: #008c75;
+    --ex-light-grey: hsl(50, 10%, 90%);
+    --light-grey: hsl(50, 10%, 75%);
+    --semi-light-grey: #aaa;
+    --semi-grey: #888;
+    --dark-grey: #646464;
+    --ex-light-beige: #f5f2e9;
+    --lighter-beige: #f5f0e1;
+    --light-beige: #f5edd5;
+    --beige: #f0e3bd;
+    --light-orange: #ffd580;
+    --peach: #dc8b51;
+    --semi-orange: #ffb042;
+    --orange: #ee7700;
+    --dark-orange: #d92400;
+    --brown: #a8873f;
+    --brown-grey: #877059;
+}
+
+.titleFont {
+    font-family: var(--title-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    position: relative;
+    min-height: 100%;
+}
+
+textarea,
+button,
+input,
+select {
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+}
+
+img {
+    display: block;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.no_wrap {
+    white-space: nowrap;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.fw700 {
+    font-weight: 700;
+}

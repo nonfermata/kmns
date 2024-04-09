@@ -1,0 +1,17 @@
+.footerWrap {
+    width: 100%;
+    height: 90px;
+    background-color: var(--deep-purple);
+    color: white;
+    border-top: 1px solid var(--light-cyan);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    /*opacity: 0;*/
+    transition: .5s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
