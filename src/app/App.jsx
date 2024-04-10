@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getBurgerStatus, toggleBurger } from '../redux/burgerReducer';
 import MainPage from './components/pages/mainPage/mainPage';
 import ResetButton from './components/common/resetButton/resetButton';
+// import nbsp from './utils/nbsp';
 
 const App = () => {
     if (!localStorage.getItem('secret')) {
@@ -23,6 +24,11 @@ const App = () => {
     };
     return (
         <div className='container' onClick={handleClick}>
+            {/*<div>*/}
+            {/*    {nbsp(prolog).map((item) => (*/}
+            {/*        <p key={item}>{item}</p>*/}
+            {/*    ))}*/}
+            {/*</div>*/}
             <Routes>
                 <Route path='/' element={<MainPage />} />
                 {/*<Route*/}
