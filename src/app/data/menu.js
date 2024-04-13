@@ -1,18 +1,18 @@
 const menu = [
     {
         id: '001',
-        name: 'О проекте',
-        link: 'about'
+        name: 'Главная',
+        link: '/'
     },
     {
         id: '002',
-        name: 'Места',
-        link: 'locations'
+        name: 'Хранители',
+        link: 'keepers'
     },
     {
         id: '003',
-        name: 'Символы',
-        link: 'symbols'
+        name: 'О проекте',
+        link: 'about'
     }
 ];
 

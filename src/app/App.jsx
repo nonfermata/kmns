@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getBurgerStatus, toggleBurger } from '../redux/burgerReducer';
 import MainPage from './components/pages/mainPage/mainPage';
 import ResetButton from './components/common/resetButton/resetButton';
+import CommonPage from './components/pages/commonPage/commonPage';
 // import nbsp from './utils/nbsp';
 
 const App = () => {
@@ -31,18 +32,7 @@ const App = () => {
             {/*</div>*/}
             <Routes>
                 <Route path='/' element={<MainPage />} />
-                {/*<Route*/}
-                {/*    path='about/:subCutName?/:schoolBlockName?'*/}
-                {/*    element={<Category category={'about'} />}*/}
-                {/*/>*/}
-                {/*<Route*/}
-                {/*    path='locations/:location?'*/}
-                {/*    element={<Category category={'locations'} />}*/}
-                {/*/>*/}
-                {/*<Route*/}
-                {/*    path='symbols/:symbol?'*/}
-                {/*    element={<Category category={'symbols'} />}*/}
-                {/*/>*/}
+                <Route path='main/*' element={<CommonPage />} />
                 <Route path='*' element={<Navigate to='/' />} />
             </Routes>
             <ResetButton />

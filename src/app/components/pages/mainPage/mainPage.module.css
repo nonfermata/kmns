@@ -1,4 +1,13 @@
-.mainPageSuperWrap {
+.pageVisible {
+    opacity: 1;
+}
+
+.pageInvisible {
+    opacity: 0;
+    transition: all ease .3s;
+}
+
+.mainImgSuperWrap {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -7,34 +16,27 @@
     align-items: center;
 }
 
-.mainPageWrap {
-    height: 100vh;
+.mainImgWrap {
+    padding: 0 15px;
+    opacity: 0;
+    height: 150vh;
     background-image: url('../../../assets/images/bgr/kmns-main.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     width: 100%;
-    animation: mainImg 5s normal;
+    transition: all 5s ease;
 }
 
-@keyframes mainImg {
-    0% {
-        height: 150vh;
-        opacity: 0;
-    }
-    100% {
-        height: 100vh;
-        opacity: 1;
-    }
+.startImgVisible {
+    opacity: 1;
+    height: 100vh;
 }
-
 
 .mainTitleWrap {
-    position: absolute;
     font-weight: 400;
-    top: 4.5vw;
-    right: 47vw;
+    margin: 4.5vw 0 0 5vw;
     font-family: var(--sans);
 }
 
@@ -87,10 +89,8 @@
 }
 
 .prologWrap {
-    font-size: 1.2em;
-    font-weight: 300;
     min-height: 100vh;
-    padding: 50px 70px 150px;
+    padding: 50px 70px;
     background-image: url('../../../assets/images/bgr/kmns-main-oleni.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -99,27 +99,12 @@
 
 .prologWrap p {
     margin-bottom: 1em;
-}
-
-.startButton {
-    margin-top: 30px;
-    border: 1px solid var(--semi-light-grey);
-    padding: 20px 30px;
-    border-radius: 5px;
-    background-color: #ffffff77;
-    transition: .2s ease all;
-    cursor: pointer;
-    font-weight: 300;
-}
-
-.startButton:hover {
-    background-color: var(--deep-purple);
-    color: white;
+    font-size: 1.1em;
 }
 
 .scrollArrowWrap {
     margin: 3vw 0 0 100px;
-    animation: arr 6s infinite;
+    animation: arrow 6s infinite;
     opacity: 0;
     transition: .5s ease all;
 }
@@ -128,7 +113,7 @@
     opacity: 1;
 }
 
-@keyframes arr {
+@keyframes arrow {
     13% {
         padding-top: 0;
     }
@@ -183,14 +168,73 @@
     height: 100px;
 }
 
-@media screen and (max-width: 991px) {
+.startButton {
+    font-family: var(--sans);
+    font-size: 1.2em;
+    margin-top: 30px;
+    border: 1px solid var(--semi-light-grey);
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #ffffff33;
+    transition: .2s ease all;
+    cursor: pointer;
+    font-weight: 300;
+}
 
+.startButton:hover {
+    background-color: var(--deep-purple);
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    .mainTitle {
+        font-size: 3.5em;
+    }
+
+    .mainSubTitle {
+        font-size: .93em;
+    }
+
+    .scrollArrowWrap {
+        margin: 20px 0 0 100px;
+    }
+
+    .prologWrap {
+        padding: 50px;
+    }
 }
 
 @media screen and (max-width: 640px) {
+    .mainImgWrap {
+        background-image: url('../../../assets/images/bgr/kmns-main-mobile.png');
+        background-position: top;
+    }
 
+    .mainTitleWrap {
+        margin: 20px 0 0 0;
+    }
+
+    .mainTitle {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .mainSubTitle {
+        font-size: .9em;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 480px) {
+    .prologWrap {
+        padding: 30px 30px 50px;
+    }
 
+    .scrollArrowWrap {
+        margin-left: 70px;
+    }
+
+    .startButton {
+        margin-top: 20px;
+    }
 }

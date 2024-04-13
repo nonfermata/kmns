@@ -1,0 +1,15 @@
+.commonPageWrap {
+    opacity: 0;
+    /*background-color: var(--light-grey);*/
+    min-height: 100vh;
+}
+
+.pageVisible {
+    opacity: 1;
+    transition: all ease .5s;
+}
+
+.pageInvisible {
+    opacity: 0;
+    transition: all ease .3s;
+}

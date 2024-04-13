@@ -1,0 +1,30 @@
+.navbarWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbarItem {
+    text-transform: uppercase;
+    font-family: var(--sans);
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--deep-purple);
+    cursor: pointer;
+    transition: all .1s ease;
+}
+
+.navbarItem:hover {
+    margin-top: -4px;
+    text-shadow: 3px 5px 3px var(--light-grey);
+}
+
+.activeItem,
+.activeItem:hover {
+    cursor: default;
+    color: var(--orange);
+    margin-top: 0;
+    text-shadow: none;
+}
+

@@ -1,10 +1,11 @@
 import React from 'react';
-import classes from './header.module.css'
+import classes from './header.module.css';
+import Navbar from './navbar/navbar';
 
-const Header = () => {
+const Header = ({ crossfade }) => {
     return (
-        <div>
-            Header
+        <div className={classes.headerWrap}>
+            <Navbar crossfade={crossfade} />
         </div>
     );
 };
