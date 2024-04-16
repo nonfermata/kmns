@@ -11,7 +11,7 @@ const App = () => {
     if (!localStorage.getItem('secret')) {
         let word = prompt('Введите заветное слово:');
         while (word !== 'Выдра') {
-            word = prompt('Это не оно. Введите заветное слово:');
+            word = prompt('Неверно! Введите заветное слово:');
         }
         localStorage.setItem('secret', 'ok');
     }

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import classes from './commonPage.module.css';
-import { useNavigate, Routes, Route } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import Header from '../../ui/header/header';
-import Keepers from '../keepers/keepers';
+import People from '../people/people';
 import About from '../about/about';
 import { useDispatch } from 'react-redux';
 import { setActiveLink } from '../../../../redux/activeLinkReducer';
+import scrollToTop from '../../../utils/scrollToTop';
 
 const CommonPage = () => {
     const dispatch = useDispatch();
@@ -17,6 +18,7 @@ const CommonPage = () => {
         setTimeout(() => {
             setToggleNav((prevState) => !prevState);
             dispatch(setActiveLink(link));
+            scrollToTop();
             navigate(link);
         }, 300);
     };
@@ -35,7 +37,7 @@ const CommonPage = () => {
         >
             <Header crossfade={crossfade} />
             <Routes>
-                <Route path='keepers' element={<Keepers />} />
+                <Route path='people' element={<People />} />
                 <Route path='about' element={<About />} />
             </Routes>
         </div>

@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const activeLinkSlice = createSlice({
     name: 'activeLink',
-    initialState: { value: 'keepers' },
+    initialState: { value: 'book' },
     reducers: {
         set(state, action) {
             state.value = action.payload;

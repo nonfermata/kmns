@@ -138,7 +138,7 @@
     padding: 0 10px;
     display: flex;
     align-items: flex-end;
-    gap: 6px;
+    gap: 3px;
     cursor: pointer;
 }
 
@@ -152,16 +152,16 @@
 
 .arrowLeftLine,
 .arrowRightLine {
-    height: 33px;
+    height: 25px;
     margin-bottom: -2px;
 }
 
 .arrowLeftLine {
-    transform: rotate(-30deg);
+    transform: rotate(-25deg);
 }
 
 .arrowRightLine {
-    transform: rotate(30deg);
+    transform: rotate(25deg);
 }
 
 .arrowMidLine {

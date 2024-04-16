@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-scroll';
 import { setActiveLink } from '../../../../redux/activeLinkReducer';
+import scrollToTop from '../../../utils/scrollToTop';
 
 const MainPageContent = () => {
     const dispatch = useDispatch();
@@ -47,8 +48,9 @@ const MainPageContent = () => {
     const crossfade = () => {
         setPageIsVisible(false);
         setTimeout(() => {
-            dispatch(setActiveLink('keepers'));
-            navigate('main/keepers');
+            dispatch(setActiveLink('people'));
+            scrollToTop();
+            navigate('main/people');
         }, 300);
     };
     return (

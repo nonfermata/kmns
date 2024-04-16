@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './keepers.module.css';
+import classes from './people.module.css';
 
-const Keepers = () => {
+const People = () => {
     return (
         <div className={classes.keepersWrap}>
             <div className={classes.contentWrap}>
@@ -51,4 +51,4 @@ const Keepers = () => {
     );
 };
 
-export default Keepers;
+export default People;
