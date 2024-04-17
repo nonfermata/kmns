@@ -1,7 +1,40 @@
-.keepersWrap {
-    padding-top: 70px;
+.peopleWrap {
+    padding: 100px 50px 50px;
 }
 
-.contentWrap {
-    padding: 30px 50px 70px;
+.cardsWrap {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+.cardWrap {
+    width: 22%;
+    cursor: pointer;
+    position: relative;
+}
+
+.cardWrapDown {
+    margin-top: 50px;
+}
+
+.cardWrapImg {
+    width: 100%;
+}
+
+.cardFrame {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all ease .2s;
+}
+
+.cardFrame:hover {
+    opacity: 1;
 }

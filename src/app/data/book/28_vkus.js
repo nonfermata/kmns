@@ -1,8 +1,10 @@
-import vkusIcon from '../../assets/images/icons/28_vkus_icon.png'
+import vkusIcon from '../../assets/images/icons/28_vkus_icon.png';
+import frame from '../../assets/images/icons/frame02.png';
 
 const vkus = {
     id: '28',
     icon: vkusIcon,
+    frame: frame,
     title: 'Вкус детства — оленье молоко',
     name: 'Татьяна Николаевна Жаркова',
     role: 'Руководитель любительского объединения молодежной студии «Хилис» (hилис означает «корень растения или дерева») по культуре долган, знает и любит традиционную долганскую кухню',

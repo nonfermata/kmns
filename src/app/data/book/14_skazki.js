@@ -1,8 +1,10 @@
-import skazkiIcon from '../../assets/images/icons/14_skazki_icon.png'
+import skazkiIcon from '../../assets/images/icons/14_skazki_icon.png';
+import frame from '../../assets/images/icons/frame03.png';
 
 const skazki = {
     id: '14',
     icon: skazkiIcon,
+    frame: frame,
     title: 'Сказки текли у меня рекой',
     name: 'Татьяна Васильевна Болина',
     role: 'Ведущий методист, сотрудник КГБУК «Таймырский дом народного творчества»',
